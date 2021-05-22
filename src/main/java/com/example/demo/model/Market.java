@@ -22,10 +22,10 @@ public class Market {
 	@JoinColumn(name = "seller_id")
 	private Seller seller;
 	
-	@Column(name = "ProductPicture")
+	@Column(name = "product_picture")
 	private String ProductPicture;
 	
-	@Column(name = "ProductName")
+	@Column(name = "product_name")
 	private String productname;
 	
 	@Column(name = "description")
@@ -34,7 +34,7 @@ public class Market {
 	@Column(name = "price")
 	private float price;
 	
-	@Column(name = "use")
+	@Column(name = "the_use")
 	private String use;
 	
 	@Column(name = "functions")

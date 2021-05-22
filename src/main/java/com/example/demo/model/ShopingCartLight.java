@@ -20,7 +20,7 @@ public class ShopingCartLight {
 	@JoinColumn(name = "shopingcart_id")
 	private ShopingCart shopingcart;
 	
-	@Column(name = "ProductName")
+	@Column(name = "product_name")
 	private String productname;
 	
 	@Column(name = "price")
@@ -33,7 +33,7 @@ public ShopingCartLight() {
 		
 	}
 	public ShopingCartLight(ShopingCart shopingcart , String productname, float price, int quantity) {
-		super();
+		// super();
 		this.shopingcart = shopingcart;
 		this.productname = productname;
 		this.quantity = quantity;

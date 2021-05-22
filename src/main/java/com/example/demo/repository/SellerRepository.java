@@ -10,7 +10,6 @@ import com.example.demo.model.Seller;
 @Repository
 public interface SellerRepository extends JpaRepository<Seller, Integer> {
 	
-	public Seller findByEmail(String email);
-	public List<Seller> findAllByEmail(String email);
-	
+	Seller findByEmail(String email);
+	List<Seller> findAllByEmail(String email);
 }

@@ -22,7 +22,7 @@ public class Customer{
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int id;
 	
-	@Column(name = "profilePicLink")
+	@Column(name = "profile_pic_link")
 	private String profilePicLink;
 	
 	@Column(name = "nickname")
@@ -31,7 +31,7 @@ public class Customer{
 	@Column(name = "password")
 	private String password;
 	
-	@Column(name = "contactDetail")
+	@Column(name = "contact_detail")
 	private String contactDetail;
 	
 	@Column(name = "phone")
@@ -54,7 +54,7 @@ public class Customer{
 	}
 
 	public Customer(String profilePicLink, String nickname, String password, String contactDetail, String phone, String email, String address, String certification, float ewallet) {
-		super();
+		// super();
 		this.profilePicLink = profilePicLink;
 		this.nickname = nickname;
 		this.password = password;

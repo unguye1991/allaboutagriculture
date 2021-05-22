@@ -46,7 +46,7 @@ public class Forum {
     
   }
   public Forum( Customer customer, String title, String thumbnail, Date date, String description) {
-     super();
+     // super();
      this.customer = customer;
      this.title = title;
      this.thumbnail = thumbnail;

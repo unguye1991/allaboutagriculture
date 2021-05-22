@@ -44,7 +44,7 @@ public class Courses {
 		
 	}
 	public Courses(Seller seller, Customer customer, String coursename, String contact, String description) {
-		super();
+		// super();
 		this.seller = seller;
 		this.customer = customer;
 		this.coursename = coursename;

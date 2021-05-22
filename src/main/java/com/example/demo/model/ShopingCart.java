@@ -18,15 +18,14 @@ public class ShopingCart {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int id;
 	
-	
 	@OneToOne
 	@JoinColumn(name = "customer_id")
 	private Customer customer;
 	
-	@Column(name = "ProductPicture")
+	@Column(name = "product_picture")
 	private String ProductPicture;
 	
-	@Column(name = "ProductName")
+	@Column(name = "product_name")
 	private String productname;
 	
 	@Column(name = "description")
@@ -35,7 +34,7 @@ public class ShopingCart {
 	@Column(name = "price")
 	private float price;
 	
-	@Column(name = "use")
+	@Column(name = "the_use")
 	private String use;
 	
 	@Column(name = "functions")
@@ -53,7 +52,7 @@ public class ShopingCart {
 	}
 	public ShopingCart( Customer customer, String ProductPicture, String productname, String description, float price, String use,
 			String functions, String quality, int quantity) {
-		super();
+		// super();
 		this.customer = customer;
 		this.ProductPicture = ProductPicture;
 		this.productname = productname;

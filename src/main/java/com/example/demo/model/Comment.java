@@ -29,7 +29,7 @@ public class Comment {
   private Customer customer;
 
   @OneToOne
-  @JoinColumn(name = "forum name")
+  @JoinColumn(name = "forum_name")
   private Forum forum;
 
  
@@ -41,7 +41,7 @@ public class Comment {
     
   }
   public Comment( Customer customer, Forum forum, String comment) {
-     super();
+     // super();
      this.customer = customer;
      this.forum = forum;
      this.comment = comment;

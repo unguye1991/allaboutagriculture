@@ -65,7 +65,7 @@ public class ShopingCartLightController {
 	// get ShopingCartLight by ShopingCart id REST API
 	@GetMapping("/shopingcartlight/shopingcart/{shopingcartId}")
 	public ResponseEntity<List<ShopingCartLight>> getShopingCartLightByshopingcartId(@PathVariable int shopingcartId) {
-		List<ShopingCartLight> shopingcartlight = ShopingCartLightRepository.findByShopingCartId(shopingcartId);
+		List<ShopingCartLight> shopingcartlight = ShopingCartLightRepository.findByShopingcartId(shopingcartId);
 		return ResponseEntity.ok(shopingcartlight);
 		}
 	
